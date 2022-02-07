@@ -1,20 +1,32 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "./App.css";
+import { GithubProvider } from "./context/GithubContext";
 
 function App() {
-  let orel = "orel";
   return (
-    <Router>
-      <div className="App flex flex-col justify-between h-screen">
-        <Navbar title={orel} />
-        <main>Content</main>
-        <Footer />
-      </div>
-    </Router>
+    <GithubProvider>
+      <Router>
+        <div className=" flex flex-col justify-between h-screen">
+          <Navbar />
+          <main className="App container mx-auto px-3 pb-12">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/notfound" element={<NotFound />} />
+              <Route path="/*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </GithubProvider>
   );
 }
 
 export default App;
+
+//npm start
