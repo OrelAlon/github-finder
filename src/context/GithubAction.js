@@ -10,13 +10,17 @@ const github = axios.create({
 
 // Get search results
 export const searchUsers = async (text) => {
-  const params = new URLSearchParams({
-    q: text,
-  });
+  // const params = new URLSearchParams({
+  //   q: text,
+  // });
 
-  const response = await github.get(`/search/users?${params}`);
+  const response = await github.get(
+    "https://coderbyte.com/api/challenges/json/age-counting"
+  );
+  console.log(response.data.items);
   return response.data.items;
 };
+searchUsers();
 
 // Get user and repos
 export const getUserAndRepos = async (login) => {

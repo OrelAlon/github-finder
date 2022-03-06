@@ -5,3 +5,21 @@
 /* .App {
   background-color: rgb(45, 51, 59);
 } */
+
+button {
+  margin: 20px;
+  padding: 10px;
+  border-color: black;
+  border: 12px;
+  background-color: pink;
+
+  color: black;
+}
+input {
+  border: 5px;
+  border-color: black;
+  border-radius: 10px;
+}
+label {
+  padding: 50px;
+}

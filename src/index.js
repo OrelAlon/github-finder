@@ -10,5 +10,5 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// REACT_APP_GITHUB_URL="https://api.github.com"
-// REACT_APP_GITHUB_TOKEN='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'
+
+// REACT_APP_GITHUB_TOKEN='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'
