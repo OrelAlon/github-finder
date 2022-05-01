@@ -1,7 +1,7 @@
-# Getting Started with Create React App
+# Getting Started React
 
-### `npm start`
+You can check the site through [github-finder](https://github-finder-umber.vercel.app/).
 
-# To See The Projrct :
+### Search your account on github api
 
-https://github-finder-umber.vercel.app/
+## Enjoy
