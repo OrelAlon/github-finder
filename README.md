@@ -1,4 +1,4 @@
-# Getting Started React
+# Getting Started With React
 
 You can check the site through [github-finder](https://github-finder-umber.vercel.app/).
 
