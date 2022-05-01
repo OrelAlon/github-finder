@@ -1,4 +1,4 @@
-import React from "react";
+import "./footer.css";
 
 function Footer() {
   const footerYear = new Date().getFullYear();
